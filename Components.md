@@ -51,7 +51,6 @@ AXIOS to query API
 Binding   
  -when using event methods, have to bind `this` to the methods otherwise `this` will be undefined
 
-
 ``` 
 constructor (props) {
       super(props)
