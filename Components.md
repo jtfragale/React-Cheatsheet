@@ -101,7 +101,7 @@ render() {
  }
 ```
 
-Redirect
+Redirect  
 
 ```
 import { Route, Link, Redirect } from "react-router-dom"
@@ -109,15 +109,15 @@ import { Route, Link, Redirect } from "react-router-dom"
 <Route path="/*" render={() => <Redirect to="/search" />} />
 ```
 
-Switch
-  -used to force React Router to treate routes as unique and only render first matching route
+Switch  
+  -used to force React Router to treate routes as unique and only render first matching route  
 ```
 import { Route, Link, Redirect, Switch } from "react-router-dom"
 ```
   -wrap all Route components in Switch component `<Switch></Switch>`
 
-Two-Server Architecture
-  -need to install CORS (Cross-Origin Resource Sharing) to allow front end to receive data from backend 
+Two-Server Architecture  
+  -need to install CORS (Cross-Origin Resource Sharing) to allow front end to receive data from backend  
 ```
 npm install --save cors
 ```
