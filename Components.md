@@ -15,13 +15,13 @@ Create-react-app
   -writes out build dependencies
   -allows import of CSS, gives dev server to run, and hot reloading
   -uses Webpack which includes Babel, Autoprefixer for CSS, Jest for testing, and ESLint
-  
+```  
 $ npm i -g create-react-app
 $ create-react-app <put app name here>
 $ cd <app name>
 $ code .
 $ npm run start
-  
+```  
 Components:
   -functional elements that take in data and produce UI
   -every component has a render method, which generate Virtual DOM
