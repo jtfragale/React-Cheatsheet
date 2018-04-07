@@ -79,6 +79,56 @@ ReactDom.render(
   document.getElementById("root")
 )
 ```
+Importing other components
+  -Link: used for setting URL and provides navigation betweeen different components in app without triggering page refresh. Can also be 
+   used inside any component that is connected to a Route
+  -Route: connects a certain path in URL with relevant component to render at that location 
+
+```
+import { Route, Link } from "react-router-dom"
+
+render() {
+  return (
+    <div>
+      <nav>
+        <Link to=""></Link>
+      </nav>
+      <main>
+        <Router path="" render={}/>
+      </main>
+    </div>
+  )
+ }
+```
+
+Redirect
+
+```
+import { Route, Link, Redirect } from "react-router-dom"
+
+<Route path="/*" render={() => <Redirect to="/search" />} />
+```
+
+Switch
+  -used to force React Router to treate routes as unique and only render first matching route
+```
+import { Route, Link, Redirect, Switch } from "react-router-dom"
+```
+  -wrap all Route components in Switch component `<Switch></Switch>`
+
+Two-Server Architecture
+  -need to install CORS (Cross-Origin Resource Sharing) to allow front end to receive data from backend 
+```
+npm install --save cors
+```
+
+```
+const cors = require('cors')
+
+app.use(cors())
+```
+
+
  
    
  
