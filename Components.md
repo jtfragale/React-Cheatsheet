@@ -64,7 +64,8 @@ React Router
   -mostly commonly used routing library  
   -serves as the root component in a React application & renders other app components wihtin itself depending on path in url
  
-```npm install --save react-router-dom
+```
+npm install --save react-router-dom
 ```
 
 ```index.js
