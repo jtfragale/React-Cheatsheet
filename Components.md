@@ -28,8 +28,8 @@ Components:
 
 Component Lifecycle:  
  -provide several lifecycle methods used to control application based on state of UI
- -```componentWillUnmount ``` called immediately before a compent is removed from DOM
- -```componentDidMount``` called immediately after a component is rendered to DOM 
+ -`componentWillUnmount` called immediately before a compent is removed from DOM
+ -`componentDidMount` called immediately after a component is rendered to DOM 
  -used for making asynchronous requests, binding event listeners to components, animating components, and optimizing performance
  -two types of component lifecycle methodes
   *mounting
@@ -49,12 +49,33 @@ AXIOS to query API
     })
     ```
 Binding   
- -when using event methods, have to bind ```this``` to the methods otherwise ```this``` will be undefined
- ```constructor (props) {
+ -when using event methods, have to bind `this` to the methods otherwise `this` will be undefined
+ ```
+ constructor (props) {
       super(props)
-      
       this.handleClick = this.handleClick.bind(this)
-    }```
+    }
+ ```
+ ``` <button onClick={this.handleClick}/>
+ ```
+React Router   
+  -mostly commonly used routing library  
+  -serves as the root component in a React application & renders other app components wihtin itself depending on path in url
+ 
+```npm install --save react-router-dom
+```
+
+```index.js
+
+import { BrowswerRouter as Router } from "react-router-dom"
+
+ReactDom.render(
+  <Router>
+    <App />
+  <Router>,
+  document.getElementById("root")
+)
+```
  
    
  
