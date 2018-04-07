@@ -38,8 +38,7 @@ Component Lifecycle:
 AXIOS to query API  
   ```
   import axios from 'axios'
-  ```
-  ```
+
    axios.get('url)
     .then((res) => {
      console.log(res)
@@ -47,17 +46,21 @@ AXIOS to query API
     .catch((error) => {
      console.log(error)
     })
-    ```
+  ```  
+
 Binding   
  -when using event methods, have to bind `this` to the methods otherwise `this` will be undefined
- ```
- constructor (props) {
+
+
+``` 
+constructor (props) {
       super(props)
       this.handleClick = this.handleClick.bind(this)
     }
- ```
- ``` <button onClick={this.handleClick}/>
- ```
+
+<button onClick={this.handleClick}/>
+```
+
 React Router   
   -mostly commonly used routing library  
   -serves as the root component in a React application & renders other app components wihtin itself depending on path in url
